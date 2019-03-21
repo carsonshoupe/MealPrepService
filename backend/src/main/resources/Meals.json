@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"name": "Bourbon Mustard Chicken",
+		"protein": "Chicken",
+		"description": "ENCORE ENTREE!!! You'll see this favorite on our menu every other month. Our chicken breasts soak in a bourbon and mustard sauce that is slightly sweet and totally delicious.",
+		"cookTime": 15,
+		"cookType": "Stove top",
+		"recommendedSides": [
+			"Carrots",
+			"Rice"
+		],
+		"nutritionInfo": {
+			"calories": 200,
+			"totalFat": 4.5,
+			"cholesterol": 65,
+			"sodium": 640,
+			"carbs": 8,
+			"dietaryFiber": 0,
+			"sugar": 6,
+			"protein": 25
+		},
+		"glutenFree": true,
+		"vegetarian": false,
+		"vegan": false
+	},
+	{
+		"id": 2,
+		"name": "Cilantro-Lime Chicken Fajita",
+		"protein": "Chicken",
+		"description": "Strips of chicken that you season to your liking with cilantro, lime juice, and spices are great for a quick meal any day of the week. Serve with your own toppings (sour cream, salsa, etc.)",
+		"cookTime": 30,
+		"cookType": "Stove top",
+		"recommendedSides": [
+			"Peppers",
+			"Onions",
+			"Flour Tortillas"
+		],
+		"nutritionInfo": {
+			"calories": 223,
+			"totalFat": 6,
+			"cholesterol": 78,
+			"sodium": 550,
+			"carbs": 6,
+			"dietaryFiber": 1,
+			"sugar": null,
+			"protein": null
+		},
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false
+	},
+	{
+		"id": 3,
+		"name": "Crock-pot Pork Pull",
+		"protein": "Pork",
+		"description": "ENCORE ENTREE!!! This meal will be on our menu every other month. It is a customer favorite! Put this easy meal in the crock-pot before you leave for the day and by the time you get home, dinner is ready. Seasoned pork shoulder that dissolves into a beautiful, shreddable (is that a word?) yummy entrée that is great by itself or as a sandwich. ",
+		"cookTime": 240,
+		"cookType": "Crock-pot",
+		"recommendedSides": [
+			"Bread"
+		],
+		"nutritionInfo": {
+			"calories": 290,
+			"totalFat": 11,
+			"cholesterol": 110,
+			"sodium": 510,
+			"carbs": 13,
+			"dietaryFiber": 1,
+			"sugar": 11,
+			"protein": 34
+		},
+		"glutenFree": true,
+		"vegetarian": false,
+		"vegan": false
+	}
+]

@@ -82,10 +82,10 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
+                            <outputDirectory>MealPrepService/frontend/target/classes/resources/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>$MealPrepService/frontend/src/main/web/dist/frontendApp/</directory>
+                                    <directory>MealPrepService/frontend/src/main/web/dist/frontendApp/</directory>
                                 </resource>
                             </resources>
                         </configuration>
