@@ -1,0 +1,10 @@
+[
+  {
+    "month": "February",
+    "mealIds": [3]
+  },
+  {
+    "month": "March",
+    "mealIds": [1, 2]
+  }
+]

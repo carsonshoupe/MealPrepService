@@ -11,23 +11,17 @@ import java.util.List;
 
 @Service
 public class MealsService {
-    private static List<Meal> loadedMeals;
 
-    static {
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            File file = new File("src/main/resources/Meals.json");
-            loadedMeals = objectMapper.readValue(file, new TypeReference<List<Meal>>(){});
-        } catch (IOException e) {
-            System.out.println("Failed to load meals");
-            e.printStackTrace();
-        }
-    }
+    private List<Meal> meals = Meals.getAllMeals();
 
-    private List<Meal> meals = MealsService.loadedMeals;
+
 
     public List<Meal> getAllMeals() {
         return this.meals;
+    }
+
+    public Meal getMeal(int id) {
+        return Meals.getMeal(id);
     }
 
 

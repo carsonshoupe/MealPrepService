@@ -8,7 +8,7 @@ Users should be able to:
 2. Select meals
 3. Place an order, which is emailed to the application owner
 
-JSON Contract -- Meal objects sent as a JSON list in the following format: \
+JSON Contract -- Meal objects sent as a JSON list in the following format:
 
 { \
 &nbsp;    "id": num, \
