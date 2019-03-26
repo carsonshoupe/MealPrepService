@@ -6,5 +6,9 @@
   {
     "month": "March",
     "mealIds": [1, 2]
+  },
+  {
+    "month": "April",
+    "mealIds": [4, 5, 6, 7]
   }
 ]
