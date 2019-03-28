@@ -1,6 +1,12 @@
 <div>
-<h2> MEALS JSON: </h2>
+  <h2> MEALS JSON: </h2>
 </div>
 <ul>
-  <li *ngFor="let meal of meals"> {{ meal.name }} </li>
+  <li *ngFor="let meal of meals" (click)="onClickMeal(meal)">
+    <button> {{ meal.name }}
+    </button> 
+    <div *ngIf="showMealID">
+        {{ showMealID }}
+    </div>
+  </li>
 </ul>
