@@ -20,8 +20,11 @@ export class Meal {
   vegetarian: boolean;
   vegan: boolean;
 
+  constructor(name: string) {
+    this.name = name;
+  }
+
   toString() {
-    console.log(this.name + " " + this.description);
     return this.name + " " + this.description;
   }
 }

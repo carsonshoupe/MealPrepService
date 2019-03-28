@@ -1,0 +1,13 @@
+<div class="cart">
+  <div><h1>Checkout Cart</h1></div>
+  <app-pricing (numOfMealsOutput)='getNumOfMeals($event)' (portionSizeOutput)="getPortionSize($event)"></app-pricing>
+  <br>
+  <br>
+
+  <div>
+    <h3>Selected Meals</h3>
+    <ul>
+      <li *ngFor="let meal of selectedMeals"><button>{{ meal }}</button></li>
+    </ul>
+  </div>
+</div>

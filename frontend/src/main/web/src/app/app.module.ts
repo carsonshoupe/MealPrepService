@@ -5,7 +5,8 @@ import {MatRadioModule} from '@angular/material/radio';
 
 import { AppComponent } from './app.component';
 import { MealsComponent } from './meals/meals.component';
-import {PricingComponent} from "./pricing/pricing.component";
+import { PricingComponent} from "./pricing/pricing.component";
+import { CartComponent } from "./cart/cart.component"
 
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -13,7 +14,8 @@ import { HttpClientModule }    from '@angular/common/http';
   declarations: [
     AppComponent,
     MealsComponent,
-    PricingComponent
+    PricingComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
