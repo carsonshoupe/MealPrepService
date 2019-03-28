@@ -1,0 +1,21 @@
+<!-- Need to figure out how to set default checked values.  Current setup doesn't work -->
+<div class="pricing">
+  <div>
+    <h3>Number of Meals</h3>
+    <mat-radio-group aria-label="numOfMeals" name="numOfMealsRg" [(ngModel)]="selectedNumOfMeals">
+      <mat-radio-button *ngFor="let numObj of numOfMealsObjs" [value]="numObj.num" [checked]="numObj.checked">
+        {{ numObj.num }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <p>Your selected number of meals is: {{selectedNumOfMeals}}</p>
+  </div>
+  <div>
+    <h3>Portion Size</h3>
+    <mat-radio-group aria-label="portionSize" [(ngModel)]="selectedPortionSize">
+      <mat-radio-button *ngFor="let portionSize of portionSizes" [value]="portionSize">
+        {{ portionSize }} ({{ portionSizeDescriptions[portionSize]}})
+      </mat-radio-button>
+    </mat-radio-group>
+    <p>Your selected portion size is: {{selectedPortionSize}}</p>
+  </div>
+</div>

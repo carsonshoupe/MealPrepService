@@ -20,7 +20,9 @@ export class MealsComponent implements OnInit {
 
   getMeals(): void {
     this.mealsService.getMeals()
-      .subscribe(meals => this.meals = meals);
-    console.log("called getMeals in Component")
+      .subscribe(meals => {
+        this.meals = meals;
+        console.log("meals: " + this.meals[1].protein);
+      });
     }
 }

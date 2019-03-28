@@ -17,8 +17,6 @@ export class MealsService {
 
   /** GET meals from the server */
   getMeals(): Observable<Meal[]> {
-    console.log("Calling getMeals() in meals service");
-    //return this.http.get<Meal[]>(this.mealsUrl);
-    return this.http.get<Meal[]>(this.mealsUrl).pipe(map(res => res));
+    return this.http.get<Meal[]>(this.mealsUrl);
   }
 }
