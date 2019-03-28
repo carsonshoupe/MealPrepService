@@ -22,7 +22,7 @@ export class MealsService {
   //   }
 
   getMockData() {
-        return this.http.get(this.mealsUrl);
+        return this.http.get<Meal[]>(this.mealsUrl);
     }
 
 

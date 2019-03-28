@@ -3,10 +3,11 @@
 </div>
 <ul>
   <li *ngFor="let meal of meals" (click)="onClickMeal(meal)">
-    <button> {{ meal.name }}
+    <button class="meal-button"> {{ meal.name }}
     </button> 
-    <div *ngIf="showMealID">
-        {{ showMealID }}
+    <div *ngIf="meal.id === showMealID">
+        <app-menu [mealsJSON]="meals" [mealIDtoShow]="meal.id">
+        </app-menu>
     </div>
   </li>
 </ul>

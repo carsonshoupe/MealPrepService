@@ -21,7 +21,7 @@ export class Meal {
   vegan: boolean;
 
   toString() {
-    console.log(this.name + " " + this.description);
-    return this.name + " " + this.description;
+    console.log(this.name + ' ' + this.description);
+    return this.name + ' ' + this.description;
   }
 }

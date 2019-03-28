@@ -17,7 +17,7 @@ export class MealsComponent implements OnInit {
 
   constructor(private mealsService: MealsService, private menuComponent: MenuComponent) { }
 
-  @Output() mealsJSON = new EventEmitter();
+  @Output() mealsJSON: EventEmitter<Meal[]> = new EventEmitter();
 
   /**
    * Gets data from the mealsService
@@ -27,6 +27,7 @@ export class MealsComponent implements OnInit {
   ngOnInit() {
     this.mealsService.getMockData().subscribe(mealsServiceObj => {
       this.meals = mealsServiceObj;
+      this.mealsJSON.emit(this.meals);
       this.menuComponent.mealsJSON = this.meals;
     });
   }
